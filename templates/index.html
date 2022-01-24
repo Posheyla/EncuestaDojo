@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta - Dojo</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Dojo Survey</h1>
+        <form action="/registro" method='POST'>
+            <div class="section">
+                <label for="nombre">
+                    Nombre:
+                </label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+            <div class="section">
+                <label for="location">
+                    Dojo location:
+                </label>
+                <select name="location" id="location">
+                    <option value="none"></option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="Seattle">Seattle</option>
+                    <option value="Onlinne">onlinne</option>
+                    <option value="Burbak">Burbak</option>
+                    <option value="Bellevue">Bellevue</option>
+                </select>
+            </div>
+            <div class="section">
+                <label for="language">
+                    Favorite language:
+                </label>
+                <select name="language" id="language">
+                    <option value="none"></option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Python">Python</option>
+                    <option value="C#">C#</option>
+                </select>
+            </div>
+            <div class="section">
+                <label for="comment">
+                    Comments: (optional)
+                </label>
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn" value='1'>Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

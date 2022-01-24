@@ -1,0 +1,12 @@
+.contenedor{
+    border:2px solid black;
+    text-align: left;
+    background-color: rgb(48, 53, 58);
+    color:white;
+    margin: 0px 300px;
+}
+.btn{
+    background-color: orange;
+    border: 2px solid black;
+    margin: 10px 200px;
+}
